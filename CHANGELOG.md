@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/shcca/test-module/compare/v1.1.0...v1.1.1) (2019-04-21)
+
+
+### Bug Fixes
+
+* **index.js:** bug fix ([0466d32](https://github.com/shcca/test-module/commit/0466d32))
+
 # [1.1.0](https://github.com/shcca/test-module/compare/v1.0.0...v1.1.0) (2019-04-21)
 
 
