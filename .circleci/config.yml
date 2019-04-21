@@ -5,20 +5,11 @@ jobs:
       - image: circleci/node:8.10
     steps:
       - checkout
-      - run:
-          name: check-npm-version1
-          command: npm version
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
-      - run:
-          name: check-npm-version2
-          command: npm version
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-wee
-          command: npm install
+          command: npm ci
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
