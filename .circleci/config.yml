@@ -5,13 +5,13 @@ jobs:
       - image: circleci/node:8.10
     steps:
       - checkout
-      - run: npm-version
+      - run:
           name: check-npm-version1
           command: npm version
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
-      - run: npm-version
+      - run:
           name: check-npm-version2
           command: npm version
       - restore_cache:
