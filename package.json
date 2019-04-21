@@ -45,13 +45,13 @@
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
-     }
+    }
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
-     }
+    }
   },
   "lint-staged": {
     "*.js": [
@@ -64,15 +64,18 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/changelog", {
+      [
+        "@semantic-release/changelog",
+        {
           "changelogFile": "CHANGELOG.md"
-      }],
+        }
+      ],
       "@semantic-release/git"
     ]
   },
   "standard": {
     "env": [
       "jest"
-     ]
+    ]
   }
 }
