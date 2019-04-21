@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run: npm-version
-        name: check-npm-version1
-        command: npm version
+          name: check-npm-version1
+          command: npm version
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
