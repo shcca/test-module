@@ -1,3 +1,3 @@
 module.exports = () => {
-  return 'test-module3'
+  return 'test-module4'
 }
